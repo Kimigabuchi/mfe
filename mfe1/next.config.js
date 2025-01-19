@@ -11,10 +11,10 @@ const nextConfig = {
         remotes: {
           buttonApp: 'buttonApp@http://localhost:3000/_next/static/chunks/remoteEntry.js', // Подключение remote
         },
-        shared: {
-          react: { singleton: true, requiredVersion: false },
-          'react-dom': { singleton: true, requiredVersion: false },
-        },
+        // shared: {
+        //   react: { singleton: true, requiredVersion: false },
+        //   'react-dom': { singleton: true, requiredVersion: false },
+        // },
       })
     )
     return config

@@ -45,15 +45,16 @@ module.exports = {
         exposes: {
           './Button': './src/components/Button',
           './Avatar': './src/components/Avatar',
+          './AuthProvider': './src/components/AuthProvider/AuthProvider.tsx',
         },
-        shared: {
-          react: { singleton: true, requiredVersion: false },
-          'react-dom': { singleton: true, requiredVersion: false },
-        },
-        extraOptions: {
-          enableImageLoaderFix: true,
-          enableUrlLoaderFix: true,
-        },
+        // shared: {
+        //   react: { singleton: true, requiredVersion: false },
+        //   'react-dom': { singleton: true, requiredVersion: false },
+        // },
+        // extraOptions: {
+        //   enableImageLoaderFix: true,
+        //   enableUrlLoaderFix: true,
+        // },
       })
     );
     return config;
